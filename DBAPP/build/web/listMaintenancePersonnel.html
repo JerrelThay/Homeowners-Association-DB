@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Maintenance Request Reports</title>
+        <script>
+            function redirectToPage() {
+                var selectElement = document.getElementById('requestOptions');
+                var selectedValue = selectElement.value;
+                if (selectedValue === 'personnellastname') {
+                    window.location.href = 'm_lastnameList.jsp';
+                } else if (selectedValue === 'personnelfirstname') {
+                    window.location.href = 'm_firstnameList.jsp';
+                } else if (selectedValue === 'skilldesc') {
+                    window.location.href = 'm_skilldescList.jsp';
+                } else if (selectedValue === 'hourlyrate') {
+                    window.location.href = 'm_hourlyrateList.jsp';
+                } else if (selectedValue === 'employmentdate') {
+                    window.location.href = 'm_employmentdateList.jsp';
+                } else if (selectedValue === 'resignationdate') {
+                    window.location.href = 'm_resignationdateList.jsp';
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div>View Maintenance Personnel Based on Criteria</div>
+        <label for="requestOptions">Choose an option:</label>
+        <select id="requestOptions">
+            <option value="#">Select an option</option>
+            <option value="personnellastname">Last Name</option>
+            <option value="personnelfirstname">First Name</option>
+            <option value="skilldesc">Skill Set</option>
+            <option value="hourlyrate">Hourly Rate</option>
+            <option value="employmentdate">Year Employed</option>
+            <option value="resignationdate">Year Resigned</option>
+        </select>
+         
+        <button type="button" onclick="redirectToPage()">View</button>
+        <button type="button" onclick="history.back()">Cancel</button>
+    </body>
+</html>

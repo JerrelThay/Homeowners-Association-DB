@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Maintenance Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="submit_maintenance_request.jsp" method="post">
+        
+        
+        <label for=daterequested>Date Requested:</label>
+        <input type="date" id="daterequested" name="daterequested" required><br>
+        
+        <label for="propertyid">Property ID:</label>
+        <input type="text" id="propertyid" name="propertyid" required><br>
+
+        <label for="typeofwork">Type of Work:</label>
+        <select id="typeofwork" name="typeofwork">
+            <option value="Plumbing">Plumbing</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Carpentry">Carpentry</option>
+            <option value="Gardening">Electrical</option>
+            <option value="Others">Others</option>
+            
+            <!-- Add more options as needed -->
+        </select><br>
+
+
+        <a href="maintenance.html">Cancel</a>
+        <input type="submit" value="request">
+    </form>
+</body>
+</html>

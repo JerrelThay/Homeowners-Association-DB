@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Housing Unit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="list_housingunit.jsp" method="post">
+        <input type="hidden" name="action" value="search">
+
+        <label for="streetname">Street Name:</label>
+       	<input type="text" id="streetname" name="streetname"><br>
+        
+        <label for="city">City:</label>
+       	<input type="text" id="city" name="city"><br>
+
+        <label for="propertytype">Property Type:</label>
+        <select id="propertytype" name="propertytype">
+           <option value= "" >Select a Type</option>
+           <option value= "House" >House</option>
+           <option value= "Town House" >Town House</option>
+           <option value= "Condo" >Condo</option>
+           <option value= "Apartment" >Apartment</option>
+           <!-- Add other property types as needed -->
+        </select><br>
+        
+        <label for="propertyStatus">Property Status:</label>
+        <select id="propertyStatus" name="propertyStatus">
+            <option value= "" >Select a Status</option>
+            <option value= "Active" >Active</option>
+            <option value= "Inactive" >Inactive</option>
+            <!-- Add other property types as needed -->
+        </select><br>
+
+        <input type="submit" value="search">
+        <a href="housing.html">Cancel</a>
+    </form>
+</body>
+</html>

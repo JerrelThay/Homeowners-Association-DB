@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Maintenance Request Reports</title>
+        <script>
+            function redirectToPage() {
+                var selectElement = document.getElementById('requestOptions');
+                var selectedValue = selectElement.value;
+                if (selectedValue === 'dateRequested') {
+                    window.location.href = 'm_ReportDateRequested.jsp';
+                } else if (selectedValue === 'dateFulfilled') {
+                    window.location.href = 'm_ReportDateFulfilled.jsp';
+                } else if (selectedValue === 'requestStatus') {
+                    window.location.href = 'm_ReportStatus.jsp';
+                } else if (selectedValue === 'propertyID') {
+                    window.location.href = 'm_ReportPropertyID.jsp';
+                } else if (selectedValue === 'personnelID') {
+                    window.location.href = 'm_ReportPersonnelID.jsp';
+                } else if (selectedValue === 'officerID') {
+                    window.location.href = 'm_ReportOfficerID.jsp';
+                } else if (selectedValue === 'typeOfWork') {
+                    window.location.href = 'm_ReportTypeOfWork.jsp';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>Frequency of Maintenance Reports</div>
+        <label for="requestOptions">Choose an option:</label>
+        <select id="requestOptions">
+            <option value="#">Select an option</option>
+            <option value="dateRequested">Date Requested</option>
+            <option value="dateFulfilled">Date Fulfilled</option>
+            <option value="requestStatus">Request Status</option>
+            <option value="propertyID">Property ID</option>
+            <option value="personnelID">Personnel ID</option>
+            <option value="officerID">Officer ID</option>
+            <option value="typeOfWork">Type of Work</option>
+        </select>
+         
+        <button type="button" onclick="redirectToPage()">View</button>
+        <button type="button" onclick="history.back()">Cancel</button>
+    </body>
+</html>

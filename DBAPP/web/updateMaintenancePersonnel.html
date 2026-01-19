@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+<head>
+    <title>Update Maintenance Personnel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="updateMaintenance.jsp" method="post">
+        <label for="personnelid">Personnel ID:</label>
+        <input type="text" id="personnelid" name="personnelid" required><br>
+        
+        <label for="personnellastname">Personnel Last Name:</label>
+        <input type="text" id="personnellastname" name="personnellastname" ><br>
+        
+        <label for="personnelfirstname">Personnel First Name:</label>
+        <input type="text" id="personnelfirstname" name="personnelfirstname" ><br>
+        
+        <label for="phoneno">Phone Number:</label>
+        <input type="text" id="phoneno" name="phoneno" ><br>
+        
+        <label for="skilldesc">Skill Set:</label>
+        <select id="skilldesc" name="skilldesc" >
+            <option value="">Select an option</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Carpentry">Carpentry</option>
+            <option value="Gardening">Gardening</option>
+            <option value="Others">Others</option>
+        </select><br>
+
+        
+        <label for="hourlyRate">Hourly Rate:</label>
+        <input type="number" id="hourlyRate" name="hourlyRate" step="0.01" min="0"><br>
+        
+        <label for="employmentDate">Employment Date:</label>
+        <input type="date" id="employmentDate" name="employmentDate"><br>
+        
+        <label for="resignationDate">Resignation Date:</label>
+        <input type="date" id="resignationDate" name="resignationDate"><br>
+        
+        <input type="submit" value="Submit">
+        <button type="button" onclick="history.back()">Cancel</button>
+
+    </form>
+</body>
+</html>

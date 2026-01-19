@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Community Member</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	<form action = "creatememberprocessing.jsp">
+            
+            <a> Register a Community Member: </a><br>
+		
+		 <label for="memberlastname">Last Name (First Letter Must Be Capitalized):</label>
+       		 <input type="text" id="memberlastname" name="memberlastname" required><br>
+		
+		 <label for="memberfirstname">First Name (First Letter Must Be Capitalized):</label>
+       		 <input type="text" id="memberfirstname" name="memberfirstname" required><br>
+
+`		 <label for="mobileno">Mobile Number:</label>
+                 <input type="text" id="mobileno" name="mobileno" pattern="[0-9]{1,12}" title="Please enter only digits, maximum 12 digits" required><br>
+
+		 <label for="email">Email:</label>
+       		 <input type="text" id="email" name="email" required><br>
+		
+		 <label for="birthdate">Birth Day:</label>
+       		 <input type="date" id="birthdate" name="birthdate" required><br>
+
+		 <label for="gender">Gender:</label>
+                 <select id="gender" name="gender" required>
+                    <option value=""></option>
+                    <option value= "Male" >Male</option>
+                    <option value= "Female" >Female</option>
+                    <option value= "Not Specified" >Not Specified</option>
+                    <!-- Add other property types as needed -->
+                 </select><br>
+
+		 <label for="moveindate">Move in Date:</label>
+       		 <input type="date" id="moveindate" name="moveindate" required><br>
+
+		 <label for="nationality">Nationality (First Letter Must Be Capitalized):</label>
+                 <input type="text" id="nationality" name="nationality" required><br>
+                 
+                 <a href="member.html"> Go Back to Functions</a>
+                 <input type = "submit" value ="Submit">
+	</form>
+    </body>
+</html>

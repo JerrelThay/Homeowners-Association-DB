@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Create ID</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="createcardprocessing.jsp">
+
+        <a>Create ID:</a><br>
+
+        <label for="memberid">Member ID:</label>
+        <input type="text" id="memberid" name="memberid" required pattern="\d+" title="Please enter a valid integer for Member ID"><br>
+
+        <label for="reasondesc">Reason for ID:</label>
+        <select id="reasondesc" name="reasondesc" required>
+            <option value=""></option>
+            <option value="First-time Application">First-time Application</option>
+            <option value="ID was lost">ID was lost</option>
+            <option value="ID was stolen">ID was stolen</option>
+            <option value="ID is damaged">ID is damaged</option>
+            <option value="ID Expired">ID expired</option>
+            <option value="Other">Other</option>
+        </select><br>
+        
+        <input type="hidden" name="action" value="Submit">
+        <input type = "submit" value ="Submit"><br>
+        <a href="requestcard.html">Back to Functions</a>
+
+    </form>
+</body>
+</html>

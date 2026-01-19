@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Community Demographics Report</title>
+    </head>
+    <body>
+
+    <h1>Report on Community Demographics</h1>
+
+        <form action="communitydemographicsreport.jsp" method="get">
+            <label for="year">Select Year:</label>
+            <input type="text" id="year" name="year" required>
+            <button type="submit" onclick="redirectToPage()">View</button>
+        </form>
+
+        <button type="button" onclick="history.back()">Cancel</button>
+        
+    </body>
+</html>

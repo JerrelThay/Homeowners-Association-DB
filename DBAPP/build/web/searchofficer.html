@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Community Officer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Search for Community Officer:</h2>
+        <form action="search_officer.jsp">
+            <label for="officerid">Officer:</label>
+            <input type="number" id="officerid" name="officerid" ><br>
+
+            <label for="position">Officer Position:</label>
+            <select id="position" name="position">
+               <option value= "President" >President</option>
+               <option value= "Vice-President" >Vice-President</option>
+               <option value= "Secretary" >Secretary</option>
+               <option value= "Treasurer" >Treasurer</option>
+               <option value= "Village Manager" >Village Manager</option>
+               <option value= "PRO" >PRO</option>
+               <option value= "CRO" >CRO</option>
+               <option value= "Registrar" >Registrar</option>
+                <!-- Add other positions as needed -->
+             </select><br>
+
+            <label for="termstart">Term Start:</label>
+            <input type="date" id="termstart" name="termstart"><br>
+
+            <label for="termend">Term End:</label>
+            <input type="date" id="termend" name="termend"><br>
+
+            <input type="submit" value="Submit">
+            <button type="button" onclick="history.back()">Cancel</button>
+        </form>
+    </body>
+</html>

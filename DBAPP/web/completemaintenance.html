@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accept/Update Maintenance Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="complete_maintenance.jsp" method="post">
+        <input type="hidden" name="action" value="Next">
+        
+        <label for="requestid">Request ID:</label>
+        <input type="text" id="requestid" name="requestid" required><br>
+
+        <a href="maintenance.html">Cancel</a>
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>

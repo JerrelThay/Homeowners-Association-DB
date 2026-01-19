@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Housing Unit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	<form action = "register_housingunit.jsp">
+            
+            <a> Register a Housing Unit: </a><br>
+            
+        	 <label for="memberid">Owner:</label>
+                 <input type="text" id="memberid" name="memberid" required><br>
+		
+		 <label for="blockno">Block Number:</label>
+       		 <input type="text" id="blockno" name="blockno" required><br>
+		
+		 <label for="lotno">Lot Number:</label>
+       		 <input type="text" id="lotno" name="lotno" required><br>
+
+`		 <label for="streetname">Street Name:</label>
+       		 <input type="text" id="streetname" name="streetname" required><br>
+
+		 <label for="barangay">Barangay:</label>
+       		 <input type="text" id="barangay" name="barangay" required><br>
+		
+		 <label for="city">City:</label>
+       		 <input type="text" id="city" name="city" required><br>
+
+		 <label for="province">Province:</label>
+       		 <input type="text" id="province" name="province" required><br>
+
+		 <label for="region">Region:</label>
+       		 <input type="text" id="region" name="region" required><br>
+
+		 <label for="zipcode">Zipcode:</label>
+       		 <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{4}" title="Zip Codes should only be 4 digits" required><br>
+		
+		 <label for="propertytype">Property Status:</label>
+                 <select id="propertytype" name="propertytype">
+                    <option value= "House" >House</option>
+                    <option value= "Town House" >Town House</option>
+                    <option value= "Condo" >Condo</option>
+                    <option value= "Apartment" >Apartment</option>
+                    <!-- Add other property types as needed -->
+                 </select><br>
+
+		 <label for="lotsize">Lot Size:</label>
+       		 <input type="text" id="lotsize" name="lotsize" required><br>
+                 
+                 <a href="housing.html"> Back to Main Menu</a>
+                 
+                 <input type = "submit" value ="Submit">
+                 
+                 
+
+	</form>
+    </body>
+</html>

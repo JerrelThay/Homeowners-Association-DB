@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Request ID</title>
+</head>
+<body>
+    <h1>Validate Request ID</h1>
+    <form action="validatecardprocessing.jsp?action=view" method="post">
+        <label for="memberid">Member ID:</label>
+        <input type="text" id="memberid" name="memberid" required pattern="\d+" title="Please enter a valid integer for Member ID"><br>
+
+        <label for="cardno">Card Number:</label>
+        <input type="text" id="cardno" name="cardno" required pattern="\d+" title="Please enter a valid integer for Card Number"><br>
+
+        <input type="submit" value="View"><br>
+        <a href="requestcard.html">Back to Functions</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Search Requests</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form action="searchcardprocessing.jsp" method="post">
+        <label for="cardno">Card Number:</label>
+        <input type="text" id="cardno" name="cardno" required pattern="\d+" title="Please enter a valid integer for Card Number"><br>
+
+        <label for="memberid">Member ID:</label>
+        <input type="text" id="memberid" name="memberid" required pattern="\d+" title="Please enter a valid integer for Member ID"><br>
+        
+        <a href="requestcard.html">Go Back to Functions</a>
+        <button type="submit" name="action" value="retrieve">Proceed</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Community Officer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+	<form action = "create_officer.jsp">
+            
+            <a> Register a Community Officer: </a><br>
+            
+                 <label for="officerid">Officer:</label>
+                 <input type="text" id="officerid" name="officerid" required><br>
+            
+        	 <label for="memberid">Owner:</label>
+                 <input type="text" id="memberid" name="memberid" required><br>
+                 
+		 <label for="position">Officer Position:</label>
+                 <select id="position" name="position">
+                    <option value= "President" >President</option>
+                    <option value= "Vice-President" >Vice-President</option>
+                    <option value= "Secretary" >Secretary</option>
+                    <option value= "Treasurer" >Treasurer</option>
+                    <option value= "Village Manager" >Village Manager</option>
+                    <option value= "PRO" >PRO</option>
+                    <option value= "CRO" >CRO</option>
+                    <option value= "Registrar" >Registrar</option>
+                    <!-- Add other positions as needed -->
+                 </select><br>                 
+                 
+		 <label for="termstart">Term Start:</label>
+       		 <input type="date" id="termstart" name="termstart" required><br>
+
+		 <label for="termend">Term End:</label>
+       		 <input type="date" id="termend" name="termend" required><br>                    
+                 
+                 <a href="officer.html"> Back to Main Menu</a>
+                 
+                 <input type = "submit" value ="Submit">
+                 
+	</form>
+    </body>
+</html>
